@@ -13,6 +13,3 @@ RUN chmod 777 /root/activate.sh && /root/activate.sh
 EXPOSE 10000
 
 
-# [Reference]
-# https://github.com/QuantStack/xeus-cling
-# https://hub.docker.com/r/jupyter/base-notebook

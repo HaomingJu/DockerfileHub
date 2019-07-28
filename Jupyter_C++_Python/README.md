@@ -42,3 +42,10 @@ localhost:xxxx
 ```
 
 在打开的页面上填入token进行访问
+
+## 参考
+[xeus-cling github](https://github.com/QuantStack/xeus-cling)
+
+[xeus-cling doc](https://xeus-cling.readthedocs.io/en/latest/index.html)
+
+[jupyter dockerhub](https://hub.docker.com/r/jupyter/base-notebook)
