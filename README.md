@@ -1,50 +1,10 @@
-# 使用说明
+### 镜像列表
 
-## Ubuntu16.0.4 Docker
-### 1. 镜像构建
-```
-git clone https://github.com/HaomingJu/Dockerfile_Hub.git
-cd Dockerfile_Hub
-mkdir Ubuntu16_04/ && cd Ubuntu16_04
-mv Dockerfile__ubuntu16_0_4_with_sshserver__ Dockerfile
+**[Ubuntu16.0.4](./Ubuntu16_04_ssh)**
 
-sudo docker build --rm -t ubuntu16_04_with_ssh
-```
-
-镜像构建完成后，可以查看:
-```
-sudo docker image ls
-```
-
-### 2. 实例(容器)创建
-创建镜像实例 - 容器
-
-```
-sudo docker container run --name self_ubuntu -p 2222:22  -i -d ubuntu16_04_with_ssh
-```
-创建名为self_ubuntu的实例，系统为Ubuntu16.0.4
-
-进入实例就行必要修改:
-
-```
-# 修改root密码
-passwd
-```
-
-```
-# 允许root进行登录
-vim /etc/ssh/sshd_config
----
-file: /etc/ssh/sshd_config
-PermitRootLogin yes
-```
+Ubuntu 16.0.4版本. 附带ssh服务可以直接连接使用.
 
 
-### 3. 登录
-远程机A, 本地机B. Docker部署在远程机A上.
-在本地机B 上登录到远程机A中的Docker 实例.
+**[Jupyter with C++/Python](./Jupyter_C++_Python)**
 
-```
-ssh root@192.168.3.133 -p 2222
-```
-**注意这里的端口指定**
+Jupyter notebook镜像. 附带C++ Kernel/Python Kernel, 可以书写C++和Python相关的笔记.
