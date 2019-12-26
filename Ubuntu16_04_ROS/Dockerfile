@@ -12,6 +12,7 @@ RUN apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E
 RUN apt-get update
 
 RUN apt-get install -y ros-kinetic-ros-base
+RUN apt-get install -y git
 
 RUN rosdep init
 
